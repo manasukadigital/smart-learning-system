@@ -675,15 +675,15 @@ export default function App() {
 
           <div className="bg-slate-50 rounded-2xl p-6 md:p-10 border border-slate-200 mb-8 md:mb-12 shadow-sm">
             <div className="space-y-4 mb-8">
-              <ValueRow title="EBOOK PANDUAN LENGKAP" price="Rp497.000" />
-              <ValueRow title="WORKBOOK EVALUATOR LES" price="Rp497.000" />
-              <ValueRow title="AI PENDAMPING BERPIKIR" price="Rp497.000" />
-              <ValueRow title="PODCAST, SLIDE & INFOGRAFIS" price="Rp497.000" />
+              <ValueRow title="EBOOK PANDUAN LENGKAP" price="Rp149.000" />
+              <ValueRow title="WORKBOOK EVALUATOR LES" price="Rp99.000" />
+              <ValueRow title="AI PENDAMPING BERPIKIR" price="Rp199.000" />
+              <ValueRow title="PODCAST, SLIDE & INFOGRAFIS" price="Rp149.000" />
             </div>
             
             <div className="border-t border-slate-300 pt-6 flex justify-between items-end mb-8">
               <span className="text-sm font-bold text-slate-900 uppercase tracking-widest">Total Value:</span>
-              <span className="text-2xl font-black text-slate-400 line-through">Rp 1.988.000</span>
+              <span className="text-2xl font-black text-slate-400 line-through">Rp 596.000</span>
             </div>
 
             <div className="bg-slate-900 text-white rounded-2xl p-6 md:p-8 text-center relative shadow-xl flex flex-col justify-between">
