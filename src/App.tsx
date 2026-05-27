@@ -39,7 +39,7 @@ export default function App() {
             <a href="https://smartbook.myscalev.com/smart-learning-system" target="_blank" rel="noopener noreferrer" className="w-full md:w-auto bg-red-600 hover:bg-red-700 text-white font-black py-4 px-10 rounded-xl shadow-lg uppercase tracking-tighter text-sm transition-all active:scale-95 flex items-center justify-center mx-auto mt-10">
               SAYA INGIN MEMAHAMI SISTEM BELAJAR ANAK SAYA
             </a>
-            <div className="mt-16 w-full max-w-2xl mx-auto rounded-3xl overflow-hidden shadow-2xl relative border-8 border-white/50">
+            <div className="mt-10 md:mt-16 w-full max-w-2xl mx-auto rounded-3xl overflow-hidden shadow-2xl relative border-8 border-white/50">
               <div className="absolute inset-0 bg-amber-600/10 mix-blend-overlay"></div>
               <img 
                 src="https://i.ibb.co.com/0VrFrwQD/Gemini-Generated-Image-rie6wurie6wurie6.png" 
@@ -53,13 +53,13 @@ export default function App() {
       </section>
 
       {/* 2. THE PROBLEM */}
-      <section className="py-20 px-6 relative">
+      <section className="py-12 md:py-20 px-6 relative">
         <div className="max-w-3xl mx-auto">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center mb-12"
+            className="text-center mb-8 md:mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-black text-slate-900 mb-6">
               Anak Sudah Les Bertahun-Tahun… <br/> 
@@ -71,7 +71,7 @@ export default function App() {
             </blockquote>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-16">
+          <div className="grid md:grid-cols-2 gap-6 md:p-8 mb-10 md:mb-16">
             <motion.div 
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -125,13 +125,13 @@ export default function App() {
       </section>
 
       {/* 3. THE REVELATION */}
-      <section className="py-20 px-6 bg-white border-t border-b border-slate-200">
+      <section className="py-12 md:py-20 px-6 bg-white border-t border-b border-slate-200">
         <div className="max-w-4xl mx-auto">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center mb-12"
+            className="text-center mb-8 md:mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-black text-slate-900 mb-6">
               Yang Jarang Disadari Orang Tua Adalah…
@@ -145,7 +145,7 @@ export default function App() {
             initial={{ scale: 0.95, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
             viewport={{ once: true }}
-            className="bg-amber-100 p-8 md:p-12 rounded-2xl shadow-lg text-center max-w-3xl mx-auto relative overflow-hidden"
+            className="bg-amber-100 p-6 md:p-10 rounded-2xl shadow-lg text-center max-w-3xl mx-auto relative overflow-hidden"
           >
             <div className="absolute -right-10 -top-10 w-40 h-40 bg-white/20 rounded-full"></div>
             <Brain className="w-16 h-16 text-slate-900 mx-auto mb-6 relative z-10" />
@@ -162,9 +162,9 @@ export default function App() {
       </section>
 
       {/* 4. THE MISTAKE & CONSEQUENCE */}
-      <section className="py-20 px-6">
+      <section className="py-12 md:py-20 px-6">
         <div className="max-w-3xl mx-auto">
-          <div className="mb-16">
+          <div className="mb-10 md:mb-16">
             <h2 className="text-3xl md:text-4xl font-black text-slate-900 mb-8 text-center">
               Dan Inilah <span className="text-amber-600">Kesalahan yang Paling Mahal</span>
             </h2>
@@ -200,7 +200,7 @@ export default function App() {
             <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-8 text-center">
               Tanpa Sadar, Anak Mulai Bergantung
             </h2>
-            <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="grid md:grid-cols-2 gap-6 md:p-8 items-center">
               <div>
                 <p className="text-sm font-bold text-slate-500 uppercase tracking-widest mb-4">Mereka mulai:</p>
                 <ul className="space-y-4">
@@ -216,7 +216,7 @@ export default function App() {
                   ))}
                 </ul>
               </div>
-              <div className="bg-slate-900 p-8 rounded-2xl text-white shadow-xl">
+              <div className="bg-slate-900 p-6 md:p-8 rounded-2xl text-white shadow-xl">
                 <p className="italic text-slate-300 mb-4 text-sm font-medium">"Secara luar terlihat rajin belajar. Tapi sebenarnya sistem belajarnya rapuh."</p>
                 <p className="text-amber-400 font-bold text-sm">Dan ketika tutor berganti, pelajaran makin sulit, atau tekanan sekolah meningkat…</p>
                 <p className="mt-4 font-black text-xl tracking-tight">Anak mulai kehilangan arah belajar.</p>
@@ -229,9 +229,9 @@ export default function App() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="border-t border-slate-300 pt-16 mt-16"
+            className="border-t border-slate-300 pt-16 mt-10 md:mt-16"
           >
-            <div className="bg-rose-50 border border-rose-100 rounded-3xl p-8 md:p-12 shadow-sm">
+            <div className="bg-rose-50 border border-rose-100 rounded-3xl p-6 md:p-10 shadow-sm">
               <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-6 text-center">
                 Dan Yang <span className="text-rose-600">Lebih Bahaya...</span>
               </h2>
@@ -239,7 +239,7 @@ export default function App() {
                 Banyak anak akhirnya terperangkap dalam <strong>"False Productivity Learning"</strong>.
               </p>
               
-              <div className="grid md:grid-cols-2 gap-8 mb-8">
+              <div className="grid md:grid-cols-2 gap-6 md:p-8 mb-8">
                 <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex flex-col justify-center">
                   <div className="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center mb-6">
                     <div className="w-4 h-4 bg-amber-500 rounded-full"></div>
@@ -291,7 +291,7 @@ export default function App() {
       </section>
 
       {/* 5. INTRODUCING THE SOLUTION */}
-      <section className="py-24 px-6 bg-white border-t border-b border-slate-200">
+      <section className="py-16 md:py-24 px-6 bg-white border-t border-b border-slate-200">
         <div className="max-w-4xl mx-auto text-center">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
@@ -303,7 +303,7 @@ export default function App() {
               <span className="text-amber-600">SMART LEARNING SYSTEM</span> Dibuat
             </h2>
             
-            <div className="grid md:grid-cols-3 gap-6 mb-12">
+            <div className="grid md:grid-cols-3 gap-6 mb-8 md:mb-12">
               <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200">
                 <XCircle className="w-8 h-8 text-slate-400 mx-auto mb-4" />
                 <p className="font-bold text-sm text-slate-900">Bukan untuk menambah les baru.</p>
@@ -318,7 +318,7 @@ export default function App() {
               </div>
             </div>
 
-            <div className="bg-white border-l-8 border-slate-800 rounded-r-2xl p-8 md:p-12 text-left max-w-3xl mx-auto shadow-md">
+            <div className="bg-white border-l-8 border-slate-800 rounded-r-2xl p-6 md:p-10 text-left max-w-3xl mx-auto shadow-md">
               <p className="text-sm uppercase tracking-widest font-bold text-gray-500 mb-6 text-center">Keputusan pendidikan tidak lagi dibuat karena:</p>
               <div className="flex flex-wrap justify-center gap-3 mb-8">
                 {['Panik', 'Takut', 'Ikut-ikutan', 'Rasa Bersalah'].map(w => (
@@ -342,7 +342,7 @@ export default function App() {
       </section>
 
       {/* 5B. MOMENT OF HOPE */}
-      <section className="py-20 px-6 bg-blue-50 border-b border-blue-100">
+      <section className="py-12 md:py-20 px-6 bg-blue-50 border-b border-blue-100">
         <div className="max-w-3xl mx-auto text-center">
           <div className="inline-block py-1 px-3 bg-green-100 text-green-800 text-[10px] font-bold rounded uppercase tracking-widest mb-4">
             KABAR BAIKNYA...
@@ -364,7 +364,7 @@ export default function App() {
             Bukan dengan menambah tekanan.<br/>
             Bukan dengan menambah jam belajar tanpa arah.
           </p>
-          <div className="bg-white p-8 rounded-2xl shadow-sm border border-blue-100 text-left mb-8">
+          <div className="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-blue-100 text-left mb-8">
             <p className="text-blue-900 mb-6 font-bold uppercase tracking-wide text-sm text-center">Tapi dengan memperbaiki:</p>
             <div className="flex flex-col md:flex-row justify-center gap-4">
               <div className="bg-blue-50 px-6 py-4 rounded-xl flex-1 text-center font-bold text-blue-900 border border-blue-100">Sistem</div>
@@ -379,9 +379,9 @@ export default function App() {
       </section>
 
       {/* 6. PRODUCT CONTENTS */}
-      <section className="py-20 px-6">
+      <section className="py-12 md:py-20 px-6">
         <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-10 md:mb-16">
             <h2 className="text-3xl md:text-4xl font-black text-slate-900 mb-6">
               Sistem Evaluasi Belajar yang Membantu Orang Tua Berhenti Menebak
             </h2>
@@ -390,14 +390,14 @@ export default function App() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-16">
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-10 md:mb-16">
             {[
-              { icon: BookOpen, label: 'Sistem Evaluasi', desc: 'Cara sederhana memahami pola belajar anak dan mengetahui apa yang sebenarnya perlu diperbaiki.' },
-              { icon: MessageCircle, label: 'Audio Guidance', desc: 'Panduan audio praktis yang membantu orang tua memahami proses belajar anak tanpa harus membaca panjang setiap hari.' },
-              { icon: Brain, label: 'Pendamping Berpikir', desc: 'Membantu Anda mengambil keputusan pendidikan tanpa panik & emosional.' },
-              { icon: NotebookPen, label: 'Les Evaluator Workbook', desc: 'SOP & Indikator untuk mengaudit efektivitas les anak minggu per minggu.' },
-              { icon: LineChart, label: 'Visual Roadmap', desc: 'Alur visual sederhana untuk membantu orang tua mengetahui apa yang harus diperbaiki terlebih dahulu.' },
-              { icon: Lightbulb, label: 'Cheat Sheet Audit', desc: 'Pertanyaan evaluasi yang membantu Anda mengetahui apakah anak benar-benar memahami pelajaran atau hanya menghafal.' }
+              { icon: BookOpen, label: 'Sistem Evaluasi', desc: 'Cara sederhana memahami pola belajar anak.' },
+              { icon: MessageCircle, label: 'Audio Guidance', desc: 'Panduan audio praktis untuk membantu orang tua memahami pola belajar anak.' },
+              { icon: Brain, label: 'Pendamping Berpikir', desc: 'Membantu Anda mengambil keputusan pendidikan dengan lebih tenang & objektif.' },
+              { icon: NotebookPen, label: 'Les Evaluator Workbook', desc: 'Indikator ringkas untuk mengaudit efektivitas les anak.' },
+              { icon: LineChart, label: 'Visual Roadmap', desc: 'Alur visual untuk mengetahui apa yang harus diperbaiki.' },
+              { icon: Lightbulb, label: 'Cheat Sheet Audit', desc: 'Pertanyaan untuk mengecek pemahaman sesungguhnya anak.' }
             ].map((item, i) => (
               <motion.div 
                 key={i}
@@ -416,7 +416,7 @@ export default function App() {
             ))}
           </div>
           
-          <div className="bg-amber-100 rounded-2xl p-8 text-center max-w-3xl mx-auto shadow-md relative overflow-hidden">
+          <div className="bg-amber-100 rounded-2xl p-6 md:p-8 text-center max-w-3xl mx-auto shadow-md relative overflow-hidden">
              <div className="absolute -right-10 -top-10 w-40 h-40 bg-white/20 rounded-full"></div>
             <p className="text-lg text-slate-900 font-bold relative z-10 leading-relaxed">
               Seluruh materi dirancang untuk membantu orang tua 
@@ -427,9 +427,9 @@ export default function App() {
       </section>
 
       {/* 7. CHAPTERS */}
-      <section className="py-20 px-6 bg-white border-t border-slate-200">
+      <section className="py-12 md:py-20 px-6 bg-white border-t border-slate-200">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-10 md:mb-16">
             <h2 className="text-3xl md:text-4xl font-black text-slate-900 mb-6 uppercase tracking-tight">
               Materi Disusun Secara Bertahap <br className="hidden md:block"/>
               <span className="text-amber-600">Agar Mudah Dipahami</span>
@@ -438,53 +438,23 @@ export default function App() {
 
           <div className="grid gap-4 md:grid-cols-2">
             <ChapterCard 
-              label="PENGANTAR"
-              title="Anak Sudah Les, Tapi Kenapa Nilainya Tetap Tidak Naik?"
-              desc="Memahami kenapa les tidak otomatis meningkatkan prestasi dan bagaimana ilusi sibuk belajar terjadi."
-            />
-            <ChapterCard 
               label="BAB 1"
               title='Ilusi "Sudah Usaha Maksimal"'
-              desc="Sebelum memperbaiki sistem belajar anak... Anda perlu memahami kenapa banyak usaha besar justru tidak menghasilkan perkembangan nyata."
+              desc="Memahami kenapa banyak usaha belajar tidak menghasilkan perkembangan nyata."
             />
             <ChapterCard 
               label="BAB 2"
               title="Kenapa Les Tidak Pernah Mengubah Nilai"
-              desc="Setelah itu Anda akan memahami... kenapa masalah utama anak sering kali bukan pada materi pelajaran. Melainkan cara belajar yang tidak sinkron."
+              desc="Mengapa masalah utama anak sering kali bukan pada materi, tapi sistem belajar yang tidak sinkron."
             />
             <ChapterCard 
               label="BAB 3"
               title="Kesalahan Fatal Penggunaan Bimbel"
-              desc="Lalu kita akan mengenali bahaya memilih les karena kepanikan semata dan menyerahkan seluruh proses belajar kepada tutor luar."
-            />
-            <ChapterCard 
-              label="BAB 4"
-              title="Bimbel Itu Alat, Bukan Sistem"
-              desc="Kemudian Anda akan menyadari... bagaimana lingkungan belajar di rumah jauh lebih menentukan daripada berapapun jumlah jam les anak."
-            />
-            <ChapterCard 
-              label="BAB 5"
-              title="SOP Rumah Setelah Anak Pulang Les"
-              desc="Sekarang saatnya praktik. Ini rutinitas sederhana setelah les untuk memastikan anak benar-benar paham, bukan sekadar menghafal sementara."
-            />
-            <ChapterCard 
-              label="BAB 6"
-              title="Audit 14 Hari: Les Ini Layak atau Tidak"
-              desc="Selanjutnya, gunakan framework observasi khusus ini untuk mengevaluasi apakah les anak saat ini benar-benar efektif atau hanya buang biaya."
-            />
-            <ChapterCard 
-              label="BAB 7"
-              title="Keputusan Akhir: Lanjut, Ganti, atau Stop"
-              desc="Di tahap ini, Anda sudah memiliki panduan lengkap mengambil keputusan pendidikan secara data dan sangat objektif, tanpa rasa bersalah."
-            />
-            <ChapterCard 
-              label="PENUTUP"
-              title="Realita Pendidikan yang Jarang Disadari"
-              desc="Sebagai pengingat akhir... Mari membantu anak belajar lebih sehat tanpa harus terjebak kompetisi akademik yang tidak ada akhirnya."
+              desc="Kesalahan umum orang tua yang membuat anak semakin bergantung pada tutor."
             />
           </div>
           
-          <div className="mt-16">
+          <div className="mt-10 md:mt-16">
             <a href="https://smartbook.myscalev.com/smart-learning-system" target="_blank" rel="noopener noreferrer" className="w-full md:w-auto bg-red-600 hover:bg-red-700 text-white font-black py-4 px-10 rounded-xl shadow-lg uppercase tracking-tighter text-sm transition-all active:scale-95 flex items-center justify-center mx-auto">
               SAYA INGIN MULAI EVALUASI BELAJAR ANAK SAYA
             </a>
@@ -493,9 +463,9 @@ export default function App() {
       </section>
 
       {/* 8. BONUSES */}
-      <section className="py-20 px-6 bg-slate-900 text-white">
+      <section className="py-12 md:py-20 px-6 bg-slate-900 text-white">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-10 md:mb-16">
             <h2 className="text-3xl md:text-4xl font-black mb-6 tracking-tight">
               Namun <span className="text-amber-400">SMART LEARNING SYSTEM</span> Tidak Berhenti di Teori
             </h2>
@@ -511,7 +481,7 @@ export default function App() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="bg-white p-8 md:p-10 rounded-2xl border-l-8 border-amber-400 relative overflow-hidden shadow-xl"
+              className="bg-white p-6 md:p-8 md:p-10 rounded-2xl border-l-8 border-amber-400 relative overflow-hidden shadow-xl"
             >
               
               <div className="inline-block py-1 px-3 bg-slate-200 text-amber-600 text-[10px] font-bold rounded uppercase tracking-widest mb-4">
@@ -523,7 +493,7 @@ export default function App() {
               </h3>
               <p className="text-slate-700 font-medium mb-6">Workbook praktis untuk membantu orang tua:</p>
               
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className="grid md:grid-cols-2 gap-6 md:p-8">
                 <ul className="space-y-3">
                   {[
                     'Mengevaluasi efektivitas les',
@@ -557,7 +527,7 @@ export default function App() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="bg-white p-8 md:p-10 rounded-2xl border-l-8 border-amber-400 relative overflow-hidden shadow-xl"
+              className="bg-white p-6 md:p-8 md:p-10 rounded-2xl border-l-8 border-amber-400 relative overflow-hidden shadow-xl"
             >
               
               <div className="inline-block py-1 px-3 bg-slate-200 text-amber-600 text-[10px] font-bold rounded uppercase tracking-widest mb-4">
@@ -586,10 +556,10 @@ export default function App() {
       </section>
 
       {/* 9. PRICING & VALUE */}
-      <section className="py-24 px-6 bg-white border-t border-slate-200 relative">
+      <section className="py-16 md:py-24 px-6 bg-white border-t border-slate-200 relative">
         <div className="max-w-3xl mx-auto">
           {/* COST OF INACTION */}
-          <div className="bg-rose-50 border-2 border-rose-100 rounded-3xl p-8 md:p-12 text-center mb-24 shadow-md relative overflow-hidden">
+          <div className="bg-rose-50 border-2 border-rose-100 rounded-3xl p-6 md:p-10 text-center mb-10 md:mb-16 md:mb-24 shadow-md relative overflow-hidden">
             <h2 className="text-2xl md:text-3xl font-black text-rose-900 mb-6 tracking-tight relative z-10">
               Semakin Lama Sistem Belajar yang Salah Dipertahankan…
             </h2>
@@ -616,33 +586,32 @@ export default function App() {
           </div>
 
           {/* PRICE TRANSITION IDEA */}
-          <div className="bg-white border text-center border-slate-200 rounded-3xl p-8 md:p-12 mb-16 shadow-sm">
-            <p className="text-slate-500 font-bold uppercase tracking-widest text-[11px] mb-4">JIKA ORANG TUA HARUS BELAJAR SEMUA INI SENDIRI...</p>
-            <h3 className="text-xl md:text-2xl font-black text-slate-900 mb-6 leading-tight">Biasanya mereka harus melewati proses yang menyakitkan:</h3>
-            <div className="flex flex-col md:flex-row justify-center gap-6 mb-8 text-left md:text-center max-w-4xl mx-auto">
-              <div className="flex-1 flex items-start md:items-center justify-start md:justify-center gap-3">
-                <div className="w-2 h-2 bg-rose-500 rounded-full flex-shrink-0 mt-1.5 md:mt-0"></div>
-                <span className="font-bold text-sm text-slate-700">Mencoba berbagai metode trial & error</span>
+          <div className="bg-white border text-center border-slate-200 rounded-3xl p-6 md:p-10 mb-10 md:mb-16 shadow-sm">
+            <h3 className="text-xl md:text-2xl font-black text-slate-900 mb-6 leading-tight">Jika Orang Tua Harus Mempelajari Semua Ini Sendiri…</h3>
+            <p className="text-slate-700 font-medium mb-6">Biasanya mereka harus:</p>
+            <div className="flex flex-col md:flex-row justify-center gap-6 mb-8 text-left md:text-center max-w-3xl mx-auto">
+              <div className="flex-1 flex items-start md:justify-center gap-3">
+                <div className="w-2 h-2 bg-rose-500 rounded-full flex-shrink-0 mt-2"></div>
+                <span className="font-bold text-slate-800 md:text-lg">pindah les berkali-kali,</span>
               </div>
-              <div className="flex-1 flex items-start md:items-center justify-start md:justify-center gap-3">
-                <div className="w-2 h-2 bg-rose-500 rounded-full flex-shrink-0 mt-1.5 md:mt-0"></div>
-                <span className="font-bold text-sm text-slate-700">Pindah les berkali-kali</span>
+              <div className="flex-1 flex items-start md:justify-center gap-3">
+                <div className="w-2 h-2 bg-rose-500 rounded-full flex-shrink-0 mt-2"></div>
+                <span className="font-bold text-slate-800 md:text-lg">menghabiskan biaya jutaan rupiah,</span>
               </div>
-              <div className="flex-1 flex items-start md:items-center justify-start md:justify-center gap-3">
-                <div className="w-2 h-2 bg-rose-500 rounded-full flex-shrink-0 mt-1.5 md:mt-0"></div>
-                <span className="font-bold text-sm text-slate-700">Menghabiskan biaya jutaan rupiah</span>
-              </div>
-              <div className="flex-1 flex items-start md:items-center justify-start md:justify-center gap-3">
-                <div className="w-2 h-2 bg-rose-500 rounded-full flex-shrink-0 mt-1.5 md:mt-0"></div>
-                <span className="font-bold text-sm text-slate-700">Mengorbankan waktu bertahun-tahun</span>
+              <div className="flex-1 flex items-start md:justify-center gap-3">
+                <div className="w-2 h-2 bg-rose-500 rounded-full flex-shrink-0 mt-2"></div>
+                <span className="font-bold text-slate-800 md:text-lg">dan kehilangan waktu bertahun-tahun.</span>
               </div>
             </div>
-            <p className="text-slate-800 font-bold leading-relaxed max-w-2xl mx-auto text-lg pt-6 border-t border-slate-100">
-              SMART LEARNING SYSTEM dirancang untuk membantu Anda <span className="text-blue-600 font-black">mempersingkat proses itu.</span>
-            </p>
+            
+            <div className="bg-slate-50 border border-slate-100 p-6 rounded-xl inline-block mt-4">
+              <p className="text-slate-800 font-bold text-lg">
+                <span className="text-blue-600 font-black">SMART LEARNING SYSTEM</span> membantu Anda mempersingkat proses itu.
+              </p>
+            </div>
           </div>
 
-          <div className="bg-blue-50 border border-blue-100 p-8 md:p-12 rounded-3xl text-left md:text-center max-w-2xl mx-auto shadow-sm mb-16 relative">
+          <div className="bg-blue-50 border border-blue-100 p-6 md:p-10 rounded-3xl text-left md:text-center max-w-2xl mx-auto shadow-sm mb-10 md:mb-16 relative">
               <h2 className="text-xl md:text-2xl font-black text-blue-900 mb-6 tracking-tight">
                 Namun kabar baiknya…
               </h2>
@@ -664,14 +633,14 @@ export default function App() {
               <p className="text-blue-900 font-medium text-lg leading-relaxed">untuk mulai memahami sistem belajar anak dengan lebih benar.</p>
             </div>
             
-            <div className="text-center mb-12">
+            <div className="text-center mb-8 md:mb-12">
             <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-4 tracking-tight">
               Jika Seluruh Sistem Ini Dipisahkan…
             </h2>
             <p className="text-slate-600 font-medium text-sm uppercase tracking-widest">Maka value yang seharusnya Anda dapatkan adalah:</p>
           </div>
 
-          <div className="bg-slate-50 rounded-2xl p-8 md:p-12 border border-slate-200 mb-12 shadow-sm">
+          <div className="bg-slate-50 rounded-2xl p-6 md:p-10 border border-slate-200 mb-8 md:mb-12 shadow-sm">
             <div className="space-y-4 mb-8">
               <ValueRow title="SMART LEARNING SYSTEM" price="Rp997.000" />
               <ValueRow title="LES EVALUATOR WORKBOOK" price="Rp497.000" />
@@ -684,7 +653,7 @@ export default function App() {
               <span className="text-2xl font-black text-slate-400 line-through">Rp 1.988.000</span>
             </div>
 
-            <div className="bg-slate-900 text-white rounded-2xl p-8 text-center relative shadow-xl flex flex-col justify-between">
+            <div className="bg-slate-900 text-white rounded-2xl p-6 md:p-8 text-center relative shadow-xl flex flex-col justify-between">
               <h3 className="text-xl font-bold mb-1 mt-4">Investasi Terbaik</h3>
               <p className="text-blue-300 text-xs uppercase tracking-widest font-bold mb-6">Akses Penuh Selamanya</p>
               
@@ -702,7 +671,7 @@ export default function App() {
             </div>
           </div>
 
-          <div className="text-center bg-blue-50 p-8 md:p-12 rounded-3xl border border-blue-100 relative">
+          <div className="text-center bg-blue-50 p-6 md:p-10 rounded-3xl border border-blue-100 relative">
             <div className="text-slate-400 font-serif text-6xl absolute top-4 left-6 opacity-20">"</div>
             <h3 className="text-xl font-black text-slate-900 mb-4 tracking-tight relative z-10">Karena keputusan pendidikan yang baik...</h3>
             <p className="text-slate-700 max-w-xl mx-auto font-medium text-lg leading-relaxed relative z-10">
@@ -746,7 +715,7 @@ export default function App() {
       {/* 10. FOOTER CTA */}
       <footer className="bg-slate-50 border-t border-slate-200 text-slate-900 py-16 px-6 text-center">
         <div className="max-w-2xl mx-auto">
-          <div className="mb-12 w-full mx-auto rounded-3xl overflow-hidden shadow-xl border border-slate-200">
+          <div className="mb-8 md:mb-12 w-full mx-auto rounded-3xl overflow-hidden shadow-xl border border-slate-200">
             <img 
               src="https://i.ibb.co.com/YBGsvWjs/Gemini-Generated-Image-qgntcgqgntcgqgnt.png" 
               alt="Mengambil keputusan pendidikan" 
@@ -759,7 +728,7 @@ export default function App() {
             yang Lebih Sehat Hari Ini
           </h2>
           
-          <div className="flex flex-wrap justify-center items-center gap-6 mt-12 mb-8">
+          <div className="flex flex-wrap justify-center items-center gap-6 mt-8 md:mt-12 mb-8">
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-green-500 rounded-full"></div>
               <span className="text-[10px] text-gray-500 font-bold uppercase tracking-widest">Framework Evaluasi</span>
@@ -778,7 +747,7 @@ export default function App() {
             </div>
           </div>
           
-          <div className="mt-16 mb-8 flex justify-center">
+          <div className="mt-10 md:mt-16 mb-8 flex justify-center">
             {/* NOTE: Silakan unggah logo Anda ke File Explorer (folder 'public') dengan nama 'logo.png' 
                 Atau ganti src ini dengan URL image.ibb.co seperti sebelumnya */}
             <img 
