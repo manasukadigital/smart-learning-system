@@ -14,7 +14,10 @@ import {
   Trophy,
   XCircle,
   AlertTriangle,
-  ArrowRight
+  ArrowRight,
+  Headphones,
+  Presentation,
+  Map
 } from 'lucide-react';
 
 export default function App() {
@@ -392,12 +395,12 @@ export default function App() {
 
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-10 md:mb-16">
             {[
-              { icon: BookOpen, label: 'Sistem Evaluasi', desc: 'Cara sederhana memahami pola belajar anak.' },
-              { icon: MessageCircle, label: 'Audio Guidance', desc: 'Panduan audio praktis untuk membantu orang tua memahami pola belajar anak.' },
-              { icon: Brain, label: 'Pendamping Berpikir', desc: 'Membantu Anda mengambil keputusan pendidikan dengan lebih tenang & objektif.' },
-              { icon: NotebookPen, label: 'Les Evaluator Workbook', desc: 'Indikator ringkas untuk mengaudit efektivitas les anak.' },
-              { icon: LineChart, label: 'Visual Roadmap', desc: 'Alur visual untuk mengetahui apa yang harus diperbaiki.' },
-              { icon: Lightbulb, label: 'Cheat Sheet Audit', desc: 'Pertanyaan untuk mengecek pemahaman sesungguhnya anak.' }
+              { icon: BookOpen, label: 'Ebook Panduan', desc: 'Materi komprehensif untuk memahami pola belajar anak.' },
+              { icon: Headphones, label: 'Deep Dive Podcast Audio', desc: 'Panduan audio praktis untuk didengarkan kapan saja.' },
+              { icon: Presentation, label: 'Slide Presentasi', desc: 'Ringkasan visual dari framework Smart Learning System.' },
+              { icon: Map, label: 'Infografis', desc: 'Alur visual untuk mengetahui apa yang harus diperbaiki.' },
+              { icon: NotebookPen, label: 'Workbook Evaluator Les', desc: 'Lembar tugas & indikator untuk mengaudit efektivitas les anak.' },
+              { icon: Brain, label: 'AI Pendamping Berpikir', desc: 'Asisten AI yang siap membantu Anda mengambil keputusan pendidikan dengan lebih tenang & objektif.' }
             ].map((item, i) => (
               <motion.div 
                 key={i}
@@ -438,19 +441,49 @@ export default function App() {
 
           <div className="grid gap-4 md:grid-cols-2">
             <ChapterCard 
-              label="BAB 1"
+              label="PENGANTAR"
+              title="Anak Sudah Les, Tapi Kenapa Nilainya Tetap Tidak Naik?"
+              desc="Memahami kenapa les tidak otomatis meningkatkan prestasi dan bagaimana ilusi sibuk belajar terjadi."
+            />
+            <ChapterCard 
+              label="MODUL 1"
               title='Ilusi "Sudah Usaha Maksimal"'
               desc="Memahami kenapa banyak usaha belajar tidak menghasilkan perkembangan nyata."
             />
             <ChapterCard 
-              label="BAB 2"
+              label="MODUL 2"
               title="Kenapa Les Tidak Pernah Mengubah Nilai"
               desc="Mengapa masalah utama anak sering kali bukan pada materi, tapi sistem belajar yang tidak sinkron."
             />
             <ChapterCard 
-              label="BAB 3"
+              label="MODUL 3"
               title="Kesalahan Fatal Penggunaan Bimbel"
               desc="Kesalahan umum orang tua yang membuat anak semakin bergantung pada tutor."
+            />
+            <ChapterCard 
+              label="MODUL 4"
+              title="Bimbel Itu Alat, Bukan Sistem"
+              desc="Mengapa lingkungan belajar di rumah jauh lebih menentukan daripada jumlah jam les."
+            />
+            <ChapterCard 
+              label="MODUL 5"
+              title="SOP Rumah Setelah Anak Pulang Les"
+              desc="Rutinitas sederhana setelah les untuk memastikan anak benar-benar paham, bukan sekadar menghafal."
+            />
+            <ChapterCard 
+              label="MODUL 6"
+              title="Audit 14 Hari: Les Ini Layak atau Tidak"
+              desc="Framework observasi khusus untuk mengevaluasi apakah les anak saat ini benar-benar efektif."
+            />
+            <ChapterCard 
+              label="MODUL 7"
+              title="Keputusan Akhir: Lanjut, Ganti, atau Stop"
+              desc="Panduan langkah demi langkah mengambil keputusan pendidikan secara data dan sangat objektif."
+            />
+            <ChapterCard 
+              label="PENUTUP"
+              title="Realita Pendidikan yang Jarang Disadari"
+              desc="Mari membantu anak belajar lebih sehat tanpa harus terjebak kompetisi akademik tanpa akhir."
             />
           </div>
           
@@ -642,10 +675,10 @@ export default function App() {
 
           <div className="bg-slate-50 rounded-2xl p-6 md:p-10 border border-slate-200 mb-8 md:mb-12 shadow-sm">
             <div className="space-y-4 mb-8">
-              <ValueRow title="SMART LEARNING SYSTEM" price="Rp997.000" />
-              <ValueRow title="LES EVALUATOR WORKBOOK" price="Rp497.000" />
-              <ValueRow title="GUIDED INSIGHT AI" price="Rp297.000" />
-              <ValueRow title="SOP Audit & Framework Evaluasi" price="Rp197.000" />
+              <ValueRow title="EBOOK PANDUAN LENGKAP" price="Rp497.000" />
+              <ValueRow title="WORKBOOK EVALUATOR LES" price="Rp497.000" />
+              <ValueRow title="AI PENDAMPING BERPIKIR" price="Rp497.000" />
+              <ValueRow title="PODCAST, SLIDE & INFOGRAFIS" price="Rp497.000" />
             </div>
             
             <div className="border-t border-slate-300 pt-6 flex justify-between items-end mb-8">
@@ -731,19 +764,27 @@ export default function App() {
           <div className="flex flex-wrap justify-center items-center gap-6 mt-8 md:mt-12 mb-8">
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-              <span className="text-[10px] text-gray-500 font-bold uppercase tracking-widest">Framework Evaluasi</span>
+              <span className="text-[10px] text-gray-500 font-bold uppercase tracking-widest">Ebook Panduan</span>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-              <span className="text-[10px] text-gray-500 font-bold uppercase tracking-widest">Audio Guidance</span>
+              <span className="text-[10px] text-gray-500 font-bold uppercase tracking-widest">Deep Dive Podcast Audio</span>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-              <span className="text-[10px] text-gray-500 font-bold uppercase tracking-widest">Pendamping Berpikir</span>
+              <span className="text-[10px] text-gray-500 font-bold uppercase tracking-widest">Slide Presentasi</span>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-              <span className="text-[10px] text-gray-500 font-bold uppercase tracking-widest">Les Evaluator Workbook</span>
+              <span className="text-[10px] text-gray-500 font-bold uppercase tracking-widest">Infografis</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+              <span className="text-[10px] text-gray-500 font-bold uppercase tracking-widest">Workbook Evaluator Les</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+              <span className="text-[10px] text-gray-500 font-bold uppercase tracking-widest">AI Pendamping Berpikir</span>
             </div>
           </div>
           
